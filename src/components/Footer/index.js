@@ -30,9 +30,10 @@ export default function Footer(props) {
     // eslint-disable-next-line react/jsx-props-no-spreading
     <FooterWrapper {...props}>
       <a href="#">
-        {/* <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" /> */}
-        <h1>OTAKUISEKAI</h1>
+        {/* <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" /> */}        
       </a>
+      <h5 style={{ marginRight: 10}}>OTAKUISEKAI </h5>
+      <p>Desenvolvido durante imersão React Alura.</p>
     </FooterWrapper>
   );
 }

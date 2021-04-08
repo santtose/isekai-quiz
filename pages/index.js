@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
@@ -29,27 +30,25 @@ export default function Home() {
         <title>Sekai quiz</title>
       </Head>
       <QuizContainer>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Titulo</h1>
+            <h1>Mundo Animes</h1>
           </Widget.Header>
           <Widget.Content>
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`quiz?name=${name}`);
-              console.log('teste seila');
             }}
             >
               <input
                 onChange={function (infosDoEvento) {
-                  console.log(infosDoEvento.target.value);
                   setName(infosDoEvento.target.value);
                 }}
                 placeholder="Digite seu nome"
               />
               <button type="submit" disabled={name.length === 0}>
-                Jogar
-                {name}
+                {name || 'Jogar'}
               </button>
             </form>
           </Widget.Content>
@@ -58,7 +57,7 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1>Outro Titulo</h1>
-            <p>Dexcrição alguma aqui de novo</p>
+            <p>Mostre o quanto você sabe do seu anime favorito!</p>
           </Widget.Content>
         </Widget>
         <Footer />
