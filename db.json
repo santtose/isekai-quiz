@@ -1,28 +1,54 @@
 {
     "bg": "https://lh3.googleusercontent.com/GWwW-qdP5N9YFJl266yFTUl8Rqso2wXOsjLamjJHnXI4XYM_Flf-SMvZ0dnAYdCwLQ=h1024-no-tmp_anime_wallpaper_apk.jpg",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "Quiz animes do Otaku Isekai",
+    "description": "Teste os seus conhecimentos sobre Animes e vamos ver o quanto você conhece sobre seus animes favoritos",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2iirjcYWUB5F_rp820q8sigUGc6KMz7RkYQ&usqp=CAU",
+        "title": "Qual é a individualidade de Mirio Togata?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Invisibilidade",
+          "Impermeabilidade",
+          "Endurecer",
+          "Voar"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMm1CkMrYQ6-FaH2_cXmiyBXS8zk_m9JSUPA&usqp=CAU",
+        "title": "Quantos corações um demônio tem normalmente?",
+        "description": "",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "2",
+           "5",
+           "7",
+           "8"
+        ]
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMnbzixvmwNYGfJZPrGDuEs6Nz5L5aOyanwg&usqp=CAU",
+        "title": "Quantos tomois possui o Rinesharingan de Sasuke?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+           "3",
+           "6",
+           "4",
+           "9"
+        ]
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0kk_AtKPW6DJR0WP-fWVJvNw8pX7kTFcBmw&usqp=CAU",
+        "title": "Qual o nome da neta de Goku?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "Pan",
+           "Bell",
+           "Gyu",
+           "Bra"
         ]
       }
     ],
