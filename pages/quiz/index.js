@@ -1,16 +1,26 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
-import db from '../db.json';
-import QuizContainer from '../src/components/QuizContainer';
-import Button from '../src/components/Button';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizLogo from '../src/components/QuizLogo';
-import Widget from '../src/components/Widget';
-import AlternativesForm from '../src/components/AlternativesForm';
+import db from '../../db.json';
+import QuizContainer from '../../src/components/QuizContainer';
+import Button from '../../src/components/Button';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizLogo from '../../src/components/QuizLogo';
+import Widget from '../../src/components/Widget';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import { motion } from 'framer-motion';
 
 function ResultWidget({ results }) {
   return (
-    <Widget>
+    <Widget
+      as={motion.section}
+      transition={{ delay: 0.5, duration: 0.5 }}
+      variants={{
+        show: { opacity: 1, y: '0' },
+        hidden: { opacity: 0, y: '100%' },
+      }}
+      initial="hidden"
+      animate="show"
+    >
       <Widget.Header>
         Tela de Resultado
       </Widget.Header>
@@ -19,14 +29,6 @@ function ResultWidget({ results }) {
           <p>
             Você acertou 
             {' '}
-            {/* { results.reduce((somatoriaAtual, resultAtual) => {
-              const isAcerto = resultAtual === true;
-              if (isAcerto) {
-                return somatoriaAtual + 1;
-              }
-
-              return somatoriaAtual;
-            }, 0)} */}
             { results.filter((x) => x).length }
             {' '}
             perguntas
@@ -70,7 +72,16 @@ function QuestionWidget({ question, totalQuestions, questionIndex, onSubmit, add
   const hasAlternativeSelected = selectedAlternative !== undefined;
 
   return (
-    <Widget>
+    <Widget
+      as={motion.section}
+      transition={{ delay: 0.5, duration: 0.5 }}
+      variants={{
+        show: { opacity: 1, y: '0' },
+        hidden: { opacity: 0, y: '100%' },
+      }}
+      initial="hidden"
+      animate="show"
+    >
       <Widget.Header>
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
