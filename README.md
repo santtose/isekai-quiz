@@ -10,4 +10,11 @@
 - Next.js
 - Hooks
 - Styled-components
+- Yarn
 
+## Para instalar e rodar
+
+- yarn install
+- yarn dev
+
+- ver package.json para os demais comandos
